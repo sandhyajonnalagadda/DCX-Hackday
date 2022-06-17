@@ -7,8 +7,6 @@ for(i in array) {
     array[i] += '\n';
     if (array[i].includes('steps')) {
         i++;
-
-        console.log(array[i]);
         
         console.log(yaml.toString().replace(/{{ command }}/, array[i]));
        
